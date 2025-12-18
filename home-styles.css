@@ -97,18 +97,30 @@ nav {
     font-weight: 500;
     font-size: 20px;
     cursor: pointer;
-    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .pink-btn:hover {
     transform: scale(1.1);
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-shadow: rgba(251, 250, 250, 0.25) 0px 54px 55px, rgba(253, 252, 252, 0.12) 0px -12px 30px, rgba(252, 252, 252, 0.12) 0px 4px 6px, rgba(254, 254, 254, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
+    box-shadow: rgba(60, 55, 62, 0) 0px 54px 55px, rgba(253, 252, 252, 0.12) 0px -12px 30px, rgba(252, 252, 252, 0.12) 0px 4px 6px, rgba(254, 254, 254, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
 }
 
 .menu a:not(.active):hover {
     color: #ad4a91;
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.column {
+    background: transparent;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.column-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .main-banner {
@@ -152,8 +164,14 @@ h4 {
     margin-top: 16px;
 }
 
-.dark-section {
-    background-color: #cf87bd;
+.barbie-section {
+    background-color: #d47fbf;
+    padding: 100px 0;
+    position: relative;
+}
+
+.ken-section {
+    background-color: #abd46c;
     padding: 100px 0;
     position: relative;
 }
@@ -163,7 +181,7 @@ h4 {
     justify-content: space-between;
 }
 
-.dark-section-text {
+.barbie-section-text {
     width: 60%;
 }
 
@@ -174,11 +192,15 @@ h4 {
     line-height: 115%;
 }
 
-.dark-section-text-item {
+.-section-text-item {
     width: 100%;
 }
 
-.dark-section-text-item:first-child {
+.-section-text-item {
+    margin-bottom: 32px;
+}
+
+.barbie-section-text-item {
     margin-bottom: 32px;
 }
 
@@ -187,13 +209,13 @@ h4 {
 }
 
 @media screen and (max-width: 1440px) {
-    .dark-section .image-content {
+    .barbie-section .image-content {
         flex-wrap: wrap;
     }
 }
 
 @media screen and (max-width: 1300px) {
-    .dark-section {
+    .barbie-section {
         font-size: 35px;
     }
 
@@ -202,7 +224,7 @@ h4 {
     }
 
     .section-text {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -221,6 +243,13 @@ h4 {
     cursor: pointer;
 }
 
+.image-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 60px;
+}
+
 @media screen and (max-width: 850px) {
     .menu {
         display: none;
@@ -237,14 +266,24 @@ h4 {
         display: block;
         width: 100%;
         height: 4px;
-        background-color: #F4C73F;
+        background-color: #e055c2;
         border-radius: 2px;
     }
 
     .main-banner {
-        width: 80%;
+        width: 100%;
+        max-width: 800px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fdfdfd;
+        text-align: center;
+        gap: 16px;
+        margin: 0 auto;
+        padding: 50px 0;
     }
-
 
     .main-banner h1 {
         font-size: 40px;
@@ -264,7 +303,7 @@ h4 {
         position: relative;
     }
 
-    .dark-section-text-item:first-child {
+    .barbie-section-text-item:first-child {
         margin-bottom: 20px;
     }
 
@@ -272,7 +311,7 @@ h4 {
         text-align: center;
     }
 
-    .dark-section-text {
+    .barbie-section-text {
         width: 100%;
     }
 
@@ -281,10 +320,28 @@ h4 {
     }
 }
 
+.image-content {
+    width: 32%;
+    /* Щоб 3 картинки помістилися в ряд (100% / 3 ≈ 33% мінус відступи) */
+    height: 305px;
+    /* Фіксована висота для акуратності */
+    object-fit: cover;
+    /* Обрізає картинку, щоб не деформувати пропорції */
+    border-radius: 16px;
+    /* Закруглені кути */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Легка тінь */
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-content img:hover {
+    transform: scale(1.02);
+}
+
 @media screen and (max-width: 450px) {
-    .image-content img {
-        width: 100%
-    }
+
 
     nav .pink-btn {
         display: none;

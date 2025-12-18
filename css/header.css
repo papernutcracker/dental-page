@@ -1,0 +1,34 @@
+.header {
+    /* 1. Positioning: Always on top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 1000;
+    /* Ensures it stays above other content */
+
+    /* 2. Glassmorphism Effect */
+    background: rgba(255, 255, 255, 0.2);
+    /* White with low opacity */
+    backdrop-filter: blur(12px);
+    /* Blurs content behind the header */
+    -webkit-backdrop-filter: blur(12px);
+    /* Required for Safari/iOS */
+
+    /* 3. Liquid/Glossy Details */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* Subtle edge highlight */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+
+    /* 4. Alignment (Optional: centers text inside) */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Prevent text from hitting the edge */
+    box-sizing: border-box;
+    /* Includes padding in width calculation */
+    color: white;
+    font-weight: bold;
+}
