@@ -65,6 +65,7 @@ nav {
     background: #e7b0df33;
     border-radius: 100px;
     padding-right: 15px;
+    font-size: 20px;
 }
 
 .logo {
@@ -86,18 +87,18 @@ nav {
     font-weight: 600;
 }
 
-.yellow-btn {
+.pink-btn {
     color: #edc3e1;
     background-color: #ca1c99;
     padding: 12px 14px;
     border-radius: 24px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.yellow-btn:hover {
+.pink-btn:hover {
     transform: scale(1.1);
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     box-shadow: rgba(251, 250, 250, 0.25) 0px 54px 55px, rgba(253, 252, 252, 0.12) 0px -12px 30px, rgba(252, 252, 252, 0.12) 0px 4px 6px, rgba(254, 254, 254, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
@@ -128,12 +129,6 @@ h4 {
     font-family: "Cormorant Garamond", serif;
 }
 
-.yellow-title {
-    color: #F9E68E;
-    font-size: 48px;
-    font-weight: 600;
-}
-
 .section-text {
     line-height: 26px;
     color: #ededed;
@@ -162,7 +157,7 @@ h4 {
 }
 
 .dark-section {
-    background-color: #01101D;
+    background-color: #cf87bd;
     padding: 100px 0;
     position: relative;
 }
@@ -191,17 +186,6 @@ h4 {
     margin-bottom: 32px;
 }
 
-.rating-list {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 56px;
-}
-
-.image-content {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-}
 
 .ellips {
     width: 273px;
@@ -215,7 +199,7 @@ h4 {
 }
 
 .menu-section {
-    background-color: #05131F;
+    background-color: #a4cdf1;
 }
 
 @media screen and (max-width: 1440px) {
@@ -225,7 +209,7 @@ h4 {
 }
 
 @media screen and (max-width: 1300px) {
-    .dark-section .yellow-title {
+    .dark-section {
         font-size: 35px;
     }
 
@@ -281,9 +265,6 @@ h4 {
         width: 80%;
     }
 
-    .yellow-title {
-        font-size: 30px;
-    }
 
     .main-banner h1 {
         font-size: 40px;
@@ -307,19 +288,7 @@ h4 {
         margin-bottom: 20px;
     }
 
-    .rating-list {
-        align-items: center;
-    }
-
-    .rating-list li {
-        width: 215px;
-    }
-
-    .rating-list li .yellow-title {
-        text-align: center;
-    }
-
-    .rating-list .section-text {
+    .section-text {
         text-align: center;
     }
 
@@ -337,7 +306,7 @@ h4 {
         width: 100%
     }
 
-    nav .yellow-btn {
+    nav .pink-btn {
         display: none;
     }
 }
