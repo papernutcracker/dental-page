@@ -3,22 +3,25 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #content-section-caries>p {
-    text-align: left;
-    width: 100%;
+    text-align: right;
+    width: calc(100% - 240px);
     font-weight: 600;
     font-family: "Cormorant Garamond", serif;
     font-size: 60px;
+    margin-top: 60px;
 }
 
-#content-section-caries> :nth-child(2) {
+#content-section-caries>div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
+    width: calc(100% - 240px);
 }
 
 #content-section-caries> :nth-child(2)>div {
