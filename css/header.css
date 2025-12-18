@@ -1,51 +1,76 @@
+/* header.css */
+
 .header {
-    /* 1. Positioning: Always on top */
+    /* KEY: fixed position keeps it stuck to the screen viewport */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 75px;
     z-index: 1000;
-    /* Ensures it stays above other content */
+    /* Ensures it floats above all other content */
 
-    /* 2. Glassmorphism Effect */
-    background: rgba(255, 255, 255, 0.2);
-    /* White with low opacity */
-    backdrop-filter: blur(12px);
-    /* Blurs content behind the header */
-    -webkit-backdrop-filter: blur(12px);
-    /* Required for Safari/iOS */
-
-    /* 3. Liquid/Glossy Details */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    /* Subtle edge highlight */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for depth */
-
-    /* 4. Alignment (Optional: centers text inside) */
+    /* Layout: Flexbox to align the menu to the left */
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
-    /* Prevent text from hitting the edge */
-    box-sizing: border-box;
-    /* Includes padding in width calculation */
-    color: white;
-    font-weight: bold;
 
-    padding: 0 75px 0 75px;
+    /* Spacing around the menu */
+    padding: 20px;
+    padding-left: 60px;
+    box-sizing: border-box;
+
+    /* Important: Allows you to click links/text BEHIND the empty parts of the header */
+    pointer-events: none;
 }
 
-.navigation-menu>a {
-    /* 1. Make it look like regular text */
+.navigation-menu {
+    /* Re-enable clicking for the menu itself */
+    pointer-events: auto;
+
+    /* Sizing: Occupies the left half of the screen */
+    min-width: 320px;
+    /* Prevents it from crushing on mobile */
+
+    /* Flexbox for the links inside */
+    display: flex;
+    justify-content: space-evenly;
+    /* Distributes links evenly */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    /* LIQUID GLASS STYLE (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.25);
+    /* Translucent white */
+    backdrop-filter: blur(12px);
+    /* Blurs the content behind it */
+    -webkit-backdrop-filter: blur(12px);
+    /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Subtle white border */
+    border-radius: 16px;
+    /* Rounded edges */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+
+    padding: 15px 20px;
+}
+
+/* Link Styling */
+.navigation-menu a {
     text-decoration: none;
-    color: inherit;
+    color: #000;
+    /* Black text for readability */
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
 
-    /* 2. Keep the standard link cursor (hand/pointer) */
-    cursor: pointer;
+    color: white;
+}
 
-    /* 3. Make it non-highlightable/unselectable */
-    user-select: none;
-    /* Standard */
-
+.navigation-menu a:hover {
+    color: rgb(245, 83, 172);
+    /* Lighten on hover */
 }
