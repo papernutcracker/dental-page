@@ -13,6 +13,7 @@
     font-weight: 600;
     font-family: "Cormorant Garamond", serif;
     font-size: 60px;
+    margin: 0;
     margin-top: 60px;
 }
 
@@ -22,24 +23,37 @@
     justify-content: center;
     align-items: flex-end;
     width: calc(100% - 240px);
+    padding-bottom: 40px;
 }
 
-#content-section-caries> :nth-child(2)>div {
+#content-section-caries>div>div {
     flex-basis: 25%;
     flex-grow: 0;
     flex-wrap: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 100%;
 }
 
-#content-section-caries> :nth-child(2)>div>p {
+#content-section-caries>div>div>p {
     font-family: "Lora", serif;
     font-size: 22px;
+    text-align: center;
 }
 
-#content-section-caries> :nth-child(2)>div>img {
+#content-section-caries>div>div>img {
     width: 240px;
     height: 240px;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#content-section-caries>div>div>img:hover {
+    transform: scale(1.05);
+    z-index: 1;
 }
