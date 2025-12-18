@@ -14,4 +14,18 @@
 
     /* Optional: bright text color to read against a dark photo */
     color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#content-section-main>p {
+    padding: 120px;
+    margin: 0;
+
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 60px;
 }

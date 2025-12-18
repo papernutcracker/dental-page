@@ -16,7 +16,7 @@
 
     /* Spacing around the menu */
     padding: 20px;
-    padding-left: 60px;
+    padding-left: 120px;
     box-sizing: border-box;
 
     /* Important: Allows you to click links/text BEHIND the empty parts of the header */
@@ -48,7 +48,7 @@
     /* For Safari */
     border: 1px solid rgba(255, 255, 255, 0.3);
     /* Subtle white border */
-    border-radius: 16px;
+    border-radius: 30px;
     /* Rounded edges */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* Soft shadow */
@@ -60,9 +60,9 @@
 .navigation-menu a {
     text-decoration: none;
     font-weight: 600;
-    font-family: sans-serif;
+    font-family: "Lora", sans-serif;
     padding: 8px 12px;
-    border-radius: 8px;
+    font-size: 18px;
 
     /* EXISTING COLOR */
     color: white;

@@ -1,0 +1,19 @@
+.content-section:nth-child(2) {
+    background-color: pink;
+}
+
+.content-section:nth-child(3) {
+    background-color: green;
+}
+
+.content-section:nth-child(4) {
+    background-color: red;
+}
+
+.content-section:nth-child(5) {
+    background-color: yellow;
+}
+
+.content-section:nth-child(6) {
+    background-color: blue;
+}
