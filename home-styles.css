@@ -1,0 +1,343 @@
+.bg-photo {
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.5),
+            rgba(47, 48, 58, 0.5)),
+        url(./img/vinier0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 946px;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    font-family: "Lora", serif;
+}
+
+html,
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Lora", serif;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-family: "Lora", serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 24px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    padding: 20px 24px;
+    background: #e7b0df33;
+    border-radius: 100px;
+    padding-right: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.menu a:not(.active) {
+    color: #D7D7D7;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu .active {
+    font-weight: 600;
+}
+
+.yellow-btn {
+    color: #edc3e1;
+    background-color: #ca1c99;
+    padding: 12px 14px;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.yellow-btn:hover {
+    transform: scale(1.1);
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: rgba(251, 250, 250, 0.25) 0px 54px 55px, rgba(253, 252, 252, 0.12) 0px -12px 30px, rgba(252, 252, 252, 0.12) 0px 4px 6px, rgba(254, 254, 254, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
+}
+
+.menu a:not(.active):hover {
+    color: #ad4a91;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main-banner {
+    width: 60%;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fdfdfd;
+    text-align: center;
+    gap: 16px;
+    margin: -50px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.yellow-title {
+    color: #F9E68E;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.section-text {
+    line-height: 26px;
+    color: #ededed;
+    font-size: 18px;
+}
+
+.main-banner-section-text {
+    width: 70%;
+}
+
+.main-banner h1 {
+    font-size: 92px;
+    line-height: 105%;
+    font-weight: 600;
+    width: 70%;
+}
+
+.without-bg {
+    background-color: #010614;
+    color: #EDEDED;
+    margin-right: 8px;
+}
+
+.buttons-container {
+    margin-top: 16px;
+}
+
+.dark-section {
+    background-color: #01101D;
+    padding: 100px 0;
+    position: relative;
+}
+
+.text-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-section-text {
+    width: 60%;
+}
+
+.section-title {
+    color: #FDFDFD;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 115%;
+}
+
+.dark-section-text-item {
+    width: 100%;
+}
+
+.dark-section-text-item:first-child {
+    margin-bottom: 32px;
+}
+
+.rating-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+.image-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.ellips {
+    width: 273px;
+    height: 273px;
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 22px 70px 4px;
+    border-radius: 50%;
+    background-color: rgba(2, 17, 31, 0.4);
+    position: absolute;
+    bottom: -50px;
+    left: -40px;
+}
+
+.menu-section {
+    background-color: #05131F;
+}
+
+@media screen and (max-width: 1440px) {
+    .dark-section .image-content {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .dark-section .yellow-title {
+        font-size: 35px;
+    }
+
+    .main-banner h1 {
+        font-size: 60px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .rating-list {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .main-banner-section-text {
+        width: 100%;
+    }
+
+    .main-banner h1 {
+        width: 100%;
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        width: 40px;
+    }
+
+    .mobile-menu span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #F4C73F;
+        border-radius: 2px;
+    }
+
+    .main-banner {
+        width: 80%;
+    }
+
+    .yellow-title {
+        font-size: 30px;
+    }
+
+    .main-banner h1 {
+        font-size: 40px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .dark-section-text-item:first-child {
+        margin-bottom: 20px;
+    }
+
+    .rating-list {
+        align-items: center;
+    }
+
+    .rating-list li {
+        width: 215px;
+    }
+
+    .rating-list li .yellow-title {
+        text-align: center;
+    }
+
+    .rating-list .section-text {
+        text-align: center;
+    }
+
+    .dark-section-text {
+        width: 100%;
+    }
+
+    .image-content {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .image-content img {
+        width: 100%
+    }
+
+    nav .yellow-btn {
+        display: none;
+    }
+}
