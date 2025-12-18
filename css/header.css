@@ -59,18 +59,19 @@
 /* Link Styling */
 .navigation-menu a {
     text-decoration: none;
-    color: #000;
-    /* Black text for readability */
     font-weight: 600;
     font-family: sans-serif;
     padding: 8px 12px;
     border-radius: 8px;
-    transition: background 0.3s ease;
 
+    /* EXISTING COLOR */
     color: white;
+
+    /* THE FIX: Change 'background' to 'color' (or 'all') */
+    transition: color 0.5s ease;
 }
 
 .navigation-menu a:hover {
-    color: rgb(245, 83, 172);
-    /* Lighten on hover */
+    /* The pink color you requested */
+    color: rgb(223, 150, 190);
 }
