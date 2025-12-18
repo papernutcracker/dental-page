@@ -1,0 +1,17 @@
+#content-section-main {
+    /* Replace 'your-image.jpg' with your actual file name */
+    background-image: url('./../../img/vinier0.jpg');
+
+    /* Ensures the image covers the whole area without stretching weirdly */
+    background-size: cover;
+
+    /* Prevents the image from tiling */
+    background-repeat: no-repeat;
+
+    /* Optional: Sets a minimum height so you can see the image 
+       even if there is no text inside yet */
+    min-height: 400px;
+
+    /* Optional: bright text color to read against a dark photo */
+    color: white;
+}

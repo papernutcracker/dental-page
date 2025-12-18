@@ -26,9 +26,26 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     /* Prevent text from hitting the edge */
     box-sizing: border-box;
     /* Includes padding in width calculation */
     color: white;
     font-weight: bold;
+
+    padding: 0 75px 0 75px;
+}
+
+.navigation-menu>a {
+    /* 1. Make it look like regular text */
+    text-decoration: none;
+    color: inherit;
+
+    /* 2. Keep the standard link cursor (hand/pointer) */
+    cursor: pointer;
+
+    /* 3. Make it non-highlightable/unselectable */
+    user-select: none;
+    /* Standard */
+
 }
