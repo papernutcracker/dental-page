@@ -1,74 +1,64 @@
 #content-section-health {
-    background-color: #d47fbf;
+    background-color: #e598d2;
     color: white;
+    padding-top: 20px;
 }
 
 #content-section-health>div {
-    height: 50%;
     padding: 0 120px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 #content-section-health> :nth-child(1) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+   align-items: center; 
+    margin-bottom: 70px;
+    padding-top: 60px
 }
-
-#content-section-health> :nth-child(1)>h3 {
+#content-section-health> :nth-child(1)>h2 {
     flex-basis: 40%;
     flex-shrink: 0;
 
     font-weight: 600;
     font-family: "Cormorant Garamond", serif;
     font-size: 60px;
+    margin: 0;
 }
 
 #content-section-health> :nth-child(1)>div {
-    flex-basis: 60%;
+    flex-basis: 55%;
     flex-shrink: 0;
 }
 
 #content-section-health> :nth-child(1)>div>p {
     font-family: "Lora", serif;
     font-size: 22px;
+    line-height: 1.5;
 }
 
 #content-section-health> :nth-child(2) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
+    margin-bottom: 0;
+    line-height: 0;
 }
 
 #content-section-health> :nth-child(2)>img {
-
-    /* Sizing constraints */
     height: 300px;
-    /* Fixed height for uniformity */
     width: auto;
-    /* Width adjusts automatically to preserve ratio */
-    max-width: 100%;
-    /* Prevents overflow on small screens */
-
-    /* Visuals */
     border-radius: 8px;
-    /* Optional: Makes corners slightly round */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Optional: Subtle shadow */
     cursor: pointer;
-
-    /* 3. The Transition */
     transition: transform 0.3s ease;
-    /* Smooths the animation over 0.3 seconds */
-
 }
 
 #content-section-health> :nth-child(2)>img:hover {
     transform: scale(1.05);
-    /* Scales the image up by 5% */
     z-index: 1;
-    /* Brings the hovered image slightly above neighbors */
 }

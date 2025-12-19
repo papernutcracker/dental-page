@@ -1,62 +1,40 @@
-/* header.css */
-
 .header {
-    /* KEY: fixed position keeps it stuck to the screen viewport */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* Ensures it floats above all other content */
-
-    /* Layout: Flexbox to align the menu to the left */
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    /* Spacing around the menu */
     padding: 20px;
-    padding-left: 120px;
+    padding-left: 60px;
     box-sizing: border-box;
 
-    /* Important: Allows you to click links/text BEHIND the empty parts of the header */
     pointer-events: none;
 }
 
 .navigation-menu {
-    /* Re-enable clicking for the menu itself */
     pointer-events: auto;
 
-    /* Sizing: Occupies the left half of the screen */
     min-width: 320px;
-    /* Prevents it from crushing on mobile */
 
-    /* Flexbox for the links inside */
     display: flex;
     justify-content: space-evenly;
-    /* Distributes links evenly */
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-
-    /* LIQUID GLASS STYLE (Glassmorphism) */
     background: rgba(255, 255, 255, 0.25);
-    /* Translucent white */
     backdrop-filter: blur(12px);
-    /* Blurs the content behind it */
     -webkit-backdrop-filter: blur(12px);
-    /* For Safari */
     border: 1px solid rgba(255, 255, 255, 0.3);
-    /* Subtle white border */
     border-radius: 30px;
-    /* Rounded edges */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    /* Soft shadow */
-
+    margin-left: 0;
     padding: 15px 20px;
 }
 
-/* Link Styling */
 .navigation-menu a {
     text-decoration: none;
     font-weight: 600;
@@ -64,14 +42,11 @@
     padding: 8px 12px;
     font-size: 18px;
 
-    /* EXISTING COLOR */
-    color: white;
+    color: rgb(249, 247, 239);
 
-    /* THE FIX: Change 'background' to 'color' (or 'all') */
     transition: color 0.5s ease;
 }
 
 .navigation-menu a:hover {
-    /* The pink color you requested */
     color: rgb(223, 150, 190);
 }

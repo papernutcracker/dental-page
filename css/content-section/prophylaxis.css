@@ -1,0 +1,77 @@
+#content-section-prophylaxis {
+    background-image: url('./../../img/curaprox.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 500px;
+    opacity: 0.8;
+    overflow: hidden;   
+}
+
+#content-section-prophylaxis>h2 {
+    text-align: right;
+    width: calc(100% - 240px);
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 60px;
+    margin-right: 350px;
+    margin-top: 0;
+    padding-top: 20px;
+    color: rgb(117, 34, 224);
+}
+#content-section-prophylaxis>h3 {
+    text-align: right;
+    width: 95%;
+    font-weight: 400;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    margin-right: 350px;
+    margin-top: 0;
+    padding-top: 20px;
+    color: aliceblue;
+}
+#content-section-prophylaxis>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: calc(100% - 240px);
+    padding-bottom: 40px;
+    gap: 25px;
+    color: rgb(51, 13, 156);
+    margin: -10px auto 0 auto;
+}
+#content-section-prophylaxis>div>div {
+    flex-basis: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    border: 1px solid #dd9ff0;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #dd9ff0;
+}
+
+#content-section-prophylaxis>div>div>p {
+    font-family: "Lora", serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+}
+
+#content-section-prophylaxis>div>div>img {
+    width: 240px;
+    height: 240px;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#content-section-prophylaxis>div>div>img:hover {
+    transform: scale(1.07);
+    z-index: 1;
+}

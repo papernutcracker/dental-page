@@ -7,40 +7,46 @@
     align-items: center;
 }
 
-#content-section-caries>p {
+#content-section-caries>h2 {
     text-align: right;
     width: calc(100% - 240px);
     font-weight: 600;
     font-family: "Cormorant Garamond", serif;
     font-size: 60px;
-    margin: 0;
-    margin-top: 60px;
+    margin-right: 350px;
+    margin-top: 0;
+    padding-top: 20px;
 }
 
 #content-section-caries>div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
-    width: calc(100% - 240px);
+    align-items: stretch;
+    width: 95%;
     padding-bottom: 40px;
+    gap: 20px;
 }
 
 #content-section-caries>div>div {
     flex-basis: 25%;
     flex-grow: 0;
-    flex-wrap: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    border: 1px solid #699427;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #8eb850;
 }
 
 #content-section-caries>div>div>p {
     font-family: "Lora", serif;
     font-size: 22px;
-    text-align: center;
+    text-align: justify;
+    margin: 0;
 }
 
 #content-section-caries>div>div>img {
@@ -50,10 +56,10 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 #content-section-caries>div>div>img:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
     z-index: 1;
 }

@@ -1,6 +1,73 @@
 #content-section-periodontitis {
-    background-image: url('./../../img/perio.jpg');
+    background-image: url('./../../img/perio2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 400px;
+    background-position: center center;
+    min-height: 500px;
+    opacity: 90%;
+}
+#content-section-periodontitis {
+    color: rgb(239, 231, 208);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content-section-periodontitis>h2 {
+    text-align: right;
+    width: calc(100% - 240px);
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 60px;
+    margin-top: 0;
+    padding-top: 20px;
+    margin-right: 350px;
+    color:#c82929 ;
+}
+
+#content-section-periodontitis>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: calc(100% - 240px);
+    padding-bottom: 40px;
+    gap: 20px;
+}
+
+#content-section-periodontitis>div>div {
+    flex-basis: 32%;
+    flex-grow: 0;
+    flex-wrap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border: 1px solid #e75f11;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #c87329;
+    transition: opacity 0.6s ease;
+}
+#content-section-periodontitis > div > div:hover {
+    opacity: 0.1;
+}
+
+#content-section-periodontitis>div>div>p {
+    font-family: "Lora", serif;
+    font-size: 22px;
+    text-align: justify;
+    margin: 0;
+    transition: transform 0.4s ease;
+}
+
+#content-section-periodontitis>div>div>img {
+    width: 500px;
+    height: 350px;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
